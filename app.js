@@ -34,7 +34,10 @@ btn.addEventListener('click' , function(){
         response.innerHTML = `You enter room ${input}. A terrifying goul chases you out. Your gut is telling you to search in higher room numbers. You have ${lives} more tries.`;
     }
     instructions.style.display = "none";
-    
+    if (Number(input) > 30){
+        lives++;
+        response.innerHTML = `There are only 20 rooms. You still have ${lives} tries.`
+    }
     //if you run out of lives
     if (lives <= 0) {
         guess1.style.display = "none";
