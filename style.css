@@ -17,4 +17,22 @@ body {
     margin: auto;
     width: 800px;
     height: 500px;
+    line-height: 4rem;
+}
+#title {
+    text-align: center;
+    font-family: creepster;
+    color: orange;
+    font-size: 2rem;
+}
+#buttons {
+    background-color: orange;
+    border: 10px solid darkgrey;
+}
+#ghost {
+    display: none;
+}
+#failure {
+    display: none;
+    font-size: 1.2rem;
 }

@@ -11,21 +11,33 @@
         <title>Guess the Number</title>
         <link rel="stylesheet" href="./style.css">
     </head>
+    <header id="title">
+        <h1>Find the escape</h1>
+    </header>
     <body>
      <div id="box">
         <h1 id="instructions">You are in a haunted hotel. There are 20 rooms, one of which has a secret passage you can escape through. Investigate the rooms but be careful, after you search the fourth room, the ghosts will catch you.</h1>
      <h2 id="response">Enter a room number 1-20 to investigate</h2>
      <input type="text" name="guess" id="guess1"><button id="button">Guess</button>
+        <br>
+        <div id="ghost">
 
+            <img height="250px" src="https://i.pinimg.com/originals/38/70/53/3870536e82fb0e192e45f088d8d01eaf.jpg" alt="spooky ghost">
+            <audio id ='music' src="./assets/2019-06-18_-_Creepy_Vibes_-_David_Fesliyan.mp3"></audio>
+        </div>
+        <br>
+        <br>
+     <div id="buttons">
+        <button id="giveup">Give Up</button>
+        <button id="restart" onclick="history.go(0)">Restart</button>
+     </div>
      </div>
 
 
 
 
 
-
-
-
+     
      
          <script type="module" src="./app.js"></script>
     </body>
