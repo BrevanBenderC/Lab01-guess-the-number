@@ -6,31 +6,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
         <title>Guess the Number</title>
         <link rel="stylesheet" href="./style.css">
     </head>
     <header id="title">
         <h1>Find the escape</h1>
     </header>
-    <body>
+<body>
      <div id="box">
-        <h1 id="instructions">You are in a haunted hotel. There are 20 rooms, one of which has a secret passage you can escape through. Investigate the rooms but be careful, after you search the fourth room, the ghosts will catch you.</h1>
-     <h2 id="response">Enter a room number 1-20 to investigate</h2>
-     <input type="text" name="guess" id="guess1"><button id="button">Guess</button>
-        <br>
+            <h1 id="instructions">You are in a haunted hotel. There are 20 rooms, one of which has a secret passage you can escape through. Investigate the rooms but be careful, after you search the fourth room, the ghosts will catch you.</h1>
+            <h2 id="response">Enter a room number 1-20 to investigate</h2>
+            <h2 id="response1"></h2>
+            <input type="text" name="guess" id="guess1"><button id="button">Guess</button>
+            <br>
         <div id="ghost">
 
-            <img height="250px" src="https://i.pinimg.com/originals/38/70/53/3870536e82fb0e192e45f088d8d01eaf.jpg" alt="spooky ghost">
+            <img height="200px" src="https://i.pinimg.com/originals/38/70/53/3870536e82fb0e192e45f088d8d01eaf.jpg" alt="spooky ghost">
             <audio id ='music' src="./assets/2019-06-18_-_Creepy_Vibes_-_David_Fesliyan.mp3"></audio>
         </div>
         <br>
         <br>
-     <div id="buttons">
-        <button id="giveup">Give Up</button>
-        <button id="restart" onclick="history.go(0)">Restart</button>
-     </div>
+        <div id="buttons">
+            <button id="giveup">Give Up</button>
+            <button id="restart" onclick="history.go(0)">Restart</button>
+        </div>
      </div>
 
 

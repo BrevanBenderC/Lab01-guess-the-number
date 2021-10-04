@@ -5,7 +5,9 @@ body {
     margin-top: 75px;
 }
 
-
+#response1 {
+    line-height: .5rem;
+}
 
 #box {
     background-color: black;
@@ -24,6 +26,7 @@ body {
     font-family: creepster;
     color: orange;
     font-size: 2rem;
+    -webkit-text-stroke: 3px black;
 }
 #buttons {
     background-color: orange;
@@ -36,3 +39,7 @@ body {
     display: none;
     font-size: 1.2rem;
 }
+#instructions {
+    background-color: darkgrey;
+    -webkit-text-stroke: 1px black;
+    }

@@ -17,12 +17,15 @@ btn.addEventListener('click' , function(){
     music.play();
     //adjust lives
     lives--;
-    //If you win
+    // clean up the box to look better
+    instructions.style.display = "none";
+    //if you win
     if (input == number){
         response.innerHTML = `You enter room ${number} and find the secret passage. You race through tight corridors and make it out alive! Press the restart button to play again`;
         guess1.style.display = "none" ;
         button.style.display = "none" ;
         giveup.style.display = "none" ;
+        
         
     //If input is too high
     } else if (Number(input) > number){
@@ -33,7 +36,7 @@ btn.addEventListener('click' , function(){
     } else if (Number(input) < number){
         response.innerHTML = `You enter room ${input}. A terrifying goul chases you out. Your gut is telling you to search in higher room numbers. You have ${lives} more tries.`;
     }
-    instructions.style.display = "none";
+    //if input is too high
     if (Number(input) > 30){
         lives++;
         response.innerHTML = `There are only 20 rooms. You still have ${lives} tries.`
@@ -43,8 +46,7 @@ btn.addEventListener('click' , function(){
         guess1.style.display = "none";
         button.style.display = "none";
         ghost.style.display = "block";
-        failure.style.display = "block";
-        response.innerHTML = "Oh no! The ghosts caught you. How spooky? Press restart to try again";
+        response1.innerHTML = "Oh no! The ghosts caught you. How spooky. Press restart to try again";
     }
 });
 
